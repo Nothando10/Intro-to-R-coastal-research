@@ -44,10 +44,16 @@ sa_3 <- sa_2 +
         scale = 1.2, symbol = 16)
 sa_3
 
+#Separating and uniting
+SACTN4a_tidy <- SACTN4a %>% 
+  separate(col = index, into = c("site", "src"), sep = "/ ")#seperate the column titled "index" into 2 columns,"site" and "src"
 
+#Unite
+SACTN4b_tidy <- SACTN4b %>% #Create a new dataset SACTN4b_tidy
+  unite(year, month, day, col = "date", sep = "-")#Unite year, month and date into a new coumn "date" seperated by"-"
 
-
-
+#Joining 
+SACTN4_tidy <- left_join(SACTN4a_tidy, SACTN4b_tidy) #combinig 2 datasets
 
 
 

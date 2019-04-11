@@ -1,6 +1,6 @@
 #Day 1 Faceting 
 #Using new library called ggpubr
-#Here we sue the function called ggarrange-found in the ggpubr package
+#Here we use the function called ggarrange-found in the ggpubr package
 
 #Loading packages
 library(tidyverse)

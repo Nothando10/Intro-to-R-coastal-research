@@ -61,7 +61,7 @@ lam_slice
 lam_miss <- laminaria %>% #Specify dataset
   summarise(mean_sm = mean(stipe_mass, na.rm =TRUE))#mean of the stipe mass
 lam_miss
-
+ ++
 #Calcualte the Standard Error
 laminaria %>% # Select 'laminaria'
   group_by(site) %>% # Group the dataframe by site
